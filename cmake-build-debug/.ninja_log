@@ -1,0 +1,11 @@
+# ninja log v5
+6	573	1716219403675706138	CMakeFiles/Critical_Thinking.dir/File.cpp.o	2c88d9ce85d2967f
+1	1093	1716216799931943463	CMakeFiles/Critical_Thinking.dir/String.cpp.o	7da632cd775c8f41
+8	536	1716219719944718915	CMakeFiles/Critical_Thinking.dir/Input.cpp.o	645a3c590a7acfca
+6	581	1716220008823817104	CMakeFiles/Critical_Thinking.dir/main.cpp.o	f2c76dbcaec7a30e
+581	637	1716220008880462092	Critical_Thinking	3cbaabfd92b7c4c8
+2	53	1716220122810690777	build.ninja	738b327fcf3f0407
+3	54	1716220122810690777	build.ninja	738b327fcf3f0407
+6	547	1716221489927371290	CMakeFiles/Critical_Thinking.dir/Input.cpp.o	645a3c590a7acfca
+6	589	1716221489969806241	CMakeFiles/Critical_Thinking.dir/main.cpp.o	f2c76dbcaec7a30e
+589	644	1716221490025487086	Critical_Thinking	3cbaabfd92b7c4c8

@@ -1,23 +1,28 @@
-PROGRAM: Integer Pointers
--	This program collects three integer values as input. Stores the values into three different variables.
-    For each variable, it creates an integer pointer to dynamic memory and displays the contents of the variables and pointers.
-    The new operator and delete operators are used to manage memory.
+PROGRAM: User Input Read/Write Program
+-	This program takes a string input from a user and stores it in a file "CSC450_CT5_mod5.txt".
+    The program reverses the values of the contents of the file "CSC450_CT5_mod5.txt" and stores it in "CSC450_CT5_mod5-reverse.txt".
 
 BEGIN
     BEGIN
-        create a main.cpp file.
-
-        declare a "str_trim" function that takes a string and returns the string with white space removed from both ends. Make sure the initial string is not mutated.
-        declare a "get_input" function that prompts a user to enter an integer string and returns a value of the type int.
+        declare a "read_file" function that takes an absolute file path parameter and returns the content of the file as a string
+        declare a "write_file" function that takes a value(the data to be written), an absolute file path and a file write mode as parameters.
+                The function will write the data to the file in the given mode(append or overwrite).
+        declare a "str_reverse" function that takes a string parameter and returns the reversed string. Make sure the initial string is not mutated.
+        declare a "get_input" function that prompts a user to enter a string and returns the string.
                 The function takes one argument: a string "instruction" to tell the user what to enter.
-                Use the "str_trim" function to trim the string and the "int" function to convert it to an integer before returning it.
-                Save the final value in a pointer and return it.
     END
 
+    declare a "save_input" function that
+            takes a user's input using the "get_input" function
+            reads the contents of the "CSC450_CT5_mod5.txt" file using the "read_file" function
+            appends the input to the file using the "write_file" function
+    declare a "save_reversed_file_content" function that
+            reads the contents of the "CSC450_CT5_mod5.txt" file using the "read_file" function.
+            reverses the file contents.
+            saves the reversed string to the "CSC450_CT5_mod5-reverse.txt" file using the "write_file" function.
+            the contents of the "CSC450_CT5_mod5-reverse.txt" file should be overwritten.
     declare a main function to run the program.
-    inside the main function:
-        - using the "get_input" function collect the user input thrice and save them in different variables.
-        - store the value of the pointer variables created above in separate variables.
-        - Print out each of the variables above, the value and its pointer.
-        - deallocate the pointer variables created using the "delete" keyword.
+        inside the main function:
+        - call the "save_input" function
+        - call the "save_reversed_file_content" function
 END
