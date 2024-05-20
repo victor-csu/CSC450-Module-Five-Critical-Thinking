@@ -33,7 +33,6 @@ string read_file(const path& file_path) {
         /*
          * Reserve string space upfront
          * and read entire file.
-         * https://stackoverflow.com/a/2602060
          *
          * @Note An improvement may be to limit filesize to read
          * to get the file size the pointer on open can be set to the end of the file
